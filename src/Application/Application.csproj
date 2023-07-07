@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Nullable>disable</Nullable>
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <PackageId>Api.Megaman.Application</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InfraStructure\InfraStructure.csproj" />
+  </ItemGroup>
+
+</Project>
