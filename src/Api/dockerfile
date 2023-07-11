@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0.0 as base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["Api/MegamanApi.csprj", "Api/"]
+RUN dotnet restore "Api/MegamanApi.csprj"
+COPY . .
+WORKDIR "/src/Api"
+RUN dotnet build "MegamanApi.csprj" -c Release -o /app/build
+
+FROM build as publish
+RUN dotnet publish "MegamanApi.csprj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "MegamanApi.dll"]
