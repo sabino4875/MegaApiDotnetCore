@@ -3,7 +3,7 @@ namespace Api.Megaman.InfraStructure.Context
     using Api.Megaman.Domain.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
+    using System;
     public class RobotsContext: DbContext
     {
         public RobotsContext(DbContextOptions<RobotsContext> options):base(options){

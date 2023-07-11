@@ -60,7 +60,7 @@
         private static WebApplicationBuilder AddPersistence(this WebApplicationBuilder builder)
         {
             builder.Services.AddDbContext<RobotsContext>(opt => opt.UseSqlServer
-                    (builder.Configuration.GetConnectionString("docker_ambient")));//dev_ambient
+                    (builder.Configuration.GetConnectionString("dev_ambient")));
             return builder;
         }
 
