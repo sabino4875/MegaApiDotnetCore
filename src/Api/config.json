@@ -8,6 +8,7 @@
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "dev_ambient": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=dbMegamanApi;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+    "dev_ambient": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=dbMegamanApi;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False",
+	"docker_ambient": "Server=sqlserver;Database=dbMegamanApi;User Id=sa;Password=SqlP@ssw0rd!1"
   }
 }
