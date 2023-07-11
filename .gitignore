@@ -1,0 +1,11 @@
+/src/Api/obj
+/src/Api/bin
+/src/Application/obj
+/src/Application/bin
+/src/Domain/obj
+/src/Domain/bin
+/src/InfraStructure/obj
+/src/InfraStructure/bin
+/src/MegaApiTest/bin
+/src/MegaApiTest/obj
+/src/Api/logs

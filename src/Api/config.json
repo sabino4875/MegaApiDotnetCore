@@ -8,6 +8,6 @@
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "dev_ambient": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=dbMegamanApi;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+    "dev_ambient": "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;AttachDbFileName=C:\\Workspaces\\DBS\\dbMegamanApi.mdf"
   }
 }
